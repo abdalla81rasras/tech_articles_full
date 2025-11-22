@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>موسوعة المقالات التقنية – 20 مقال جاهز للنشر</title>
+    <meta
+      name="description"
+      content="مجموعة من 20 مقالًا تقنية احترافية، مُحسّنة للسيو وجاهزة للنشر مع صور مجانية، شاملة نصائح وأدلة تقنية لعام 2025."
+    />
+    <meta
+      name="keywords"
+      content="مقالات تقنية, SEO, تكنولوجيا, الذكاء الاصطناعي, تسريع الانترنت, برمجيات, حماية"
+    />
+    <!-- Open Graph -->
+    <meta
+      property="og:title"
+      content="موسوعة المقالات التقنية – 20 مقال جاهز للنشر"
+    />
+    <meta
+      property="og:description"
+      content="مجموعة من 20 مقالًا تقنية احترافية، مُحسّنة للسيو وجاهزة للنشر مع صور مجانية لعام 2025."
+    />
+    <meta
+      property="og:image"
+      content="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+    />
+    <meta property="og:type" content="website" />
+
+    <style>
+      :root{--accent:#1a73e8;--bg:#eef0f3;--card:#ffffff;--muted:#6b7280}
+      *{box-sizing:border-box}
+      body{font-family:Arial, sans-serif;background:var(--bg);margin:0;color:#111;line-height:1.7}
+      header{background:linear-gradient(90deg,var(--accent),#3aa0ff);color:#fff;padding:20px 16px}
+      .wrap{max-width:1100px;margin:20px auto;padding:0 16px}
+      .topbar{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+      .brand{font-size:20px;font-weight:700}
+      nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:12px}
+      .searchbox{margin-top:12px;display:flex;gap:8px;width:100%}
+      .searchbox input{flex:1;padding:10px;border-radius:8px;border:none}
+      .searchbox button{background:#fff;color:var(--accent);border:none;padding:10px 14px;border-radius:8px;font-weight:600}
+      .main{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:20px}
+      .container{background:var(--card);padding:26px;border-radius:12px;box-shadow:0 6px 22px rgba(16,24,40,0.06)}
+      .article{margin-bottom:40px;padding-bottom:22px;border-bottom:1px solid #eee}
+      .article img{width:100%;height:auto;border-radius:10px;margin:14px 0}
+      .article h2{margin:6px 0 8px;color:#0f172a}
+      .meta{color:var(--muted);font-size:13px;margin-bottom:10px}
+      .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+      .tag{background:#f1f5f9;padding:6px 10px;border-radius:999px;font-size:13px;color:#0f172a}
+      aside{position:sticky;top:24px}
+      .card{background:#fff;padding:16px;border-radius:10px;margin-bottom:16px}
+      .toc h3{margin:0 0 10px}
+      .toc ul{list-style:none;padding:0;margin:0}
+      .toc li{margin:8px 0}
+      .toc a{color:var(--accent);text-decoration:none}
+      footer{margin-top:28px;padding:24px;text-align:center;color:#475569}
+      @media (max-width:920px){.main{grid-template-columns:1fr}.searchbox{flex-direction:column}.topbar{flex-direction:column;align-items:flex-start}}
+      .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:8px;text-decoration:none}
+      .muted-btn{background:#f1f5f9;color:#111'}
+      pre{white-space:pre-wrap;word-wrap:break-word}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="wrap topbar">
+        <div>
+          <div class="brand">موسوعة المقالات التقنية</div>
+          <div style="font-size: 13px; color: rgba(255, 255, 255, 0.9)">
+            20 مقال احترافي SEO جاهز للنشر – تحديث 2025
+          </div>
+        </div>
+        <nav>
+          <a href="#">الرئيسية</a>
+          <a href="#articles">المقالات</a>
+          <a href="#contact">اتصل بنا</a>
+          <a href="#" class="btn" onclick="window.print();return false;"
+            >طبع/تحميل PDF</a
+          >
+        </nav>
+      </div>
+
+      <div class="wrap searchbox" style="margin-top: 12px">
+        <input
+          id="searchInput"
+          placeholder="ابحث عن مقال... (مثال: تسريع الموقع، كلمات المرور)"
+          aria-label="search"
+        />
+        <button
+          onclick="document.getElementById('searchInput').value='';filterArticles('');"
+        >
+          مسح
+        </button>
+      </div>
+    </header>
+
+    <main class="wrap main">
+      <section class="container" id="articles">
+        <article class="article" id="a1" data-title="زيادة سرعة الإنترنت">
+          <h2>1. أفضل 10 طرق عملية لزيادة سرعة الإنترنت في المنزل لعام 2025</h2>
+          <div class="meta">تقنية • نصائح • 2025</div>
+          <img
+            src="https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+            alt="router"
+          />
+          <p>
+            يعاني الكثير من المستخدمين من بطء الإنترنت رغم الاشتراك في باقات
+            عالية السرعة، وغالبًا ما تكون المشكلة في إعدادات الراوتر أو طريقة
+            استخدام الشبكة. هذا الدليل يشرح طرقًا عملية لتحسين اتصالك بالإنترنت
+            دون تكلفة كبيرة.
+          </p>
+          <h3>نصائح عملية</h3>
+          <ol>
+            <li>
+              <strong>إعادة تشغيل الراوتر أسبوعيًا:</strong> يساعد على حذف
+              الأخطاء المؤقتة.
+            </li>
+            <li>
+              <strong>وضع الراوتر في مكان مفتوح וمرتفع:</strong> يقلل من العوائق
+              ويزيد مدى الإشارة.
+            </li>
+            <li>
+              <strong>تغيير كلمة مرور الواي فاي دوريًا:</strong> يمنع الاستخدام
+              غير المصرح به.
+            </li>
+            <li>
+              <strong>تحديث الراوتر:</strong> التحديثات تحسّن الأداء والأمان.
+            </li>
+            <li>
+              <strong>استخدام كابل Ethernet للأجهزة الحساسة:</strong> لاستقرار
+              وسرعة أعلى.
+            </li>
+            <li><strong>تفعيل QoS:</strong> لإعطاء أولوية للأجهزة الحيوية.</li>
+            <li>
+              <strong>فحص التطبيقات التي تستهلك النطاق الترددي:</strong>
+              وإغلاقها عند عدم الحاجة.
+            </li>
+            <li>
+              <strong>اختيار قناة Wi-Fi أقل ازدحامًا:</strong> خاصة في المباني
+              السكنية المكتظة.
+            </li>
+            <li>
+              <strong>استخدام نطاق 5GHz عند الإمكان:</strong> أسرع لكنه أقصر
+              مدى.
+            </li>
+            <li>
+              <strong>الاتصال بمزود الخدمة:</strong> عند وجود مشكلة خارجية تحتاج
+              دعم مزود الخدمة.
+            </li>
+          </ol>
+          <div class="tags">
+            <span class="tag">زيادة سرعة الإنترنت</span
+            ><span class="tag">Wi‑Fi</span><span class="tag">شبكات</span>
+          </div>
+        </article>
+
+        <article class="article" id="a2" data-title="تطبيقات إدارة الوقت">
+          <h2>2. أفضل 12 تطبيق لإدارة الوقت وزيادة الإنتاجية لعام 2025</h2>
+          <div class="meta">تقنية • إنتاجية • أدوات</div>
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f"
+            alt="productivity apps"
+          />
+          <p>
+            إدارة الوقت مهارة أساسية. في 2025 ظهرت تطبيقات تحسّن التركيز وتنظّم
+            المهام بطرق مبتكرة.
+          </p>
+          <h3>قائمة التطبيقات الموصى بها</h3>
+          <ul>
+            <li>Todoist — قوائم مهام بسيطة وفعّالة.</li>
+            <li>Notion — نظام شامل لإدارة الملاحظات والمشاريع.</li>
+            <li>Trello — لوحات سير العمل للمشاريع.</li>
+            <li>Google Calendar — منظم مواعيد قوي ومتزامن.</li>
+            <li>Forest — يساعد على تقليل إدمان الهاتف.</li>
+            <li>Focus To-Do — يعتمد على تقنية البومودورو.</li>
+            <li>Evernote — تدوين متقدم وتنظيم الملاحظات.</li>
+            <li>Habitica — تحويل الروتين اليومي إلى لعبة تحفيزية.</li>
+            <li>ClickUp — إدارة فرق ومشاريع بميزات متقدمة.</li>
+            <li>Microsoft To Do — تكامل ممتاز مع نظام Microsoft.</li>
+            <li>Calendar AI — تنظيم ذكي للاجتماعات.</li>
+            <li>Motion App — جدولة آلية للمهام.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">إنتاجية</span><span class="tag">تنظيم الوقت</span>
+          </div>
+        </article>
+
+        <article class="article" id="a3" data-title="حماية الهاتف من الفيروسات">
+          <h2>3. كيف تحمي هاتفك من الفيروسات بدون أي برنامج؟</h2>
+          <div class="meta">أمن • نصائح</div>
+          <img
+            src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg"
+            alt="phone security"
+          />
+          <p>
+            يمكنك تقليل مخاطر الإصابة بالبرمجيات الخبيثة عبر إجراءات بسيطة دون
+            تثبيت برامج مجانية أو مدفوعة.
+          </p>
+          <h3>خطوات الحماية</h3>
+          <ol>
+            <li>تجنب تحميل التطبيقات من مصادر خارج المتاجر الرسمية.</li>
+            <li>افحص الأذونات قبل تثبيت أي تطبيق.</li>
+            <li>فعّل التحديث التلقائي للنظام والتطبيقات.</li>
+            <li>لا تنقر على روابط مشبوهة في الرسائل أو البريد الإلكتروني.</li>
+            <li>استخدم رقم PIN أو بصمة للحماية الأساسية.</li>
+          </ol>
+          <div class="tags">
+            <span class="tag">أمن الهاتف</span><span class="tag">خصوصية</span>
+          </div>
+        </article>
+
+        <article
+          class="article"
+          id="a4"
+          data-title="مواقع تحميل الصور بدون حقوق"
+        >
+          <h2>4. أفضل المواقع المجانية لتحميل الصور عالية الجودة بدون حقوق</h2>
+          <div class="meta">ميديا • موارد</div>
+          <img
+            src="https://images.unsplash.com/photo-1519183071298-a2962be90b8e"
+            alt="stock photos"
+          />
+          <p>
+            هذه المواقع توفر صورًا مجانية مناسبة للمدونات والمشاريع التجارية
+            بدون مشاكل حقوق.
+          </p>
+          <ul>
+            <li>Pexels — مكتبة ضخمة وسهلة البحث.</li>
+            <li>Unsplash — صور احترافية عالية الجودة.</li>
+            <li>Pixabay — صور وفيديوهات وخلفيات.</li>
+            <li>Freepik — مفيد للفيكتورز والتصاميم.</li>
+            <li>StockSnap — تحديثات أسبوعية لصالح المصممين.</li>
+          </ul>
+          <div class="tags">
+            <span class="tag">صور مجانية</span><span class="tag">Pexels</span>
+          </div>
+        </article>
+
+        <article class="article" id="a5" data-title="هواتف الفئة المتوسطة">
+          <h2>5. أفضل هواتف الفئة المتوسطة لعام 2025</h2>
+          <div class="meta">مراجعات • تسوق</div>
+          <img
+            src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg"
+            alt="smartphones"
+          />
+          <p>
+            تتميز هواتف الفئة المتوسطة بعناصر توازن بين السعر والمواصفات. ننصح
+            بمقارنة البطارية والكاميرا والمعالج قبل الشراء.
+          </p>
+          <div class="tags">
+            <span class="tag">هواتف</span><span class="tag">مراجعات</span>
+          </div>
+        </article>
+
+        <article class="article" id="a6" data-title="زيادة عمر بطارية الهاتف">
+          <h2>6. طرق فعالة لزيادة عمر بطارية الهاتف</h2>
+          <div class="meta">نصائح • بطارية</div>
+          <img
+            src="https://images.unsplash.com/photo-1542751371-adc38448a05e"
+            alt="battery"
+          />
+          <p>
+            اتباع عادات شحن سليمة وضبط الإعدادات يساعد في الحفاظ على عمر
+            البطارية لأطول فترة ممكنة.
+          </p>
+          <ol>
+            <li>استخدم شواحن أصلية ومتوافقة.</li>
+            <li>تجنب شحن البطارية حتى 100% دائمًا إذا أمكن.</li>
+            <li>قلل من السطوع واستخدم وضع توفير الطاقة عند الحاجة.</li>
+          </ol>
+          <div class="tags">
+            <span class="tag">بطارية</span><span class="tag">نصائح</span>
+          </div>
+        </article>
+
+        <article class="article" id="a7" data-title="مواقع تحويل PDF">
+          <h2>7. أهم مواقع تحويل الملفات PDF والصور أونلاين</h2>
+          <div class="meta">أدوات • تحويل</div>
+          <img
+            src="https://images.pexels.com/photos/267606/pexels-photo-267606.jpeg"
+            alt="pdf tools"
+          />
+          <p>
+            مواقع مثل Smallpdf وILovePDF تسهّل عمليات الدمج، الضغط، والتحويل
+            بدون تثبيت برامج.
+          </p>
+          <div class="tags">
+            <span class="tag">PDF</span><span class="tag">تحويل</span>
+          </div>
+        </article>
+
+        <article class="article" id="a8" data-title="كلمة مرور قوية">
+          <h2>8. كيفية إنشاء كلمة مرور قوية يصعب اختراقها</h2>
+          <div class="meta">أمن • تعليم</div>
+          <img
+            src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4"
+            alt="password"
+          />
+          <p>
+            كلمة المرور القوية يجب أن تكون طويلة ومزجًا بين أحرف وأرقام ورموز.
+            استخدم مديري كلمات المرور عند الحاجة.
+          </p>
+          <div class="tags">
+            <span class="tag">أمن</span><span class="tag">كلمات مرور</span>
+          </div>
+        </article>
+
+        <article class="article" id="a9" data-title="تبريد الكمبيوتر">
+          <h2>9. أفضل طرق تبريد الكمبيوتر أثناء الاستخدام</h2>
+          <div class="meta">هاردوير • صيانة</div>
+          <img
+            src="https://images.pexels.com/photos/2882553/pexels-photo-2882553.jpeg"
+            alt="cooling"
+          />
+          <p>
+            تنظيف المراوح وتوفير مساحة تهوية كافية يقللان بشكل كبير من درجات
+            الحرارة ويحافظان على الأداء.
+          </p>
+          <div class="tags">
+            <span class="tag">تبريد</span><span class="tag">صيانة</span>
+          </div>
+        </article>
+
+        <article class="article" id="a10" data-title="التخزين السحابي">
+          <h2>10. لماذا يعتبر التخزين السحابي ضروريًا في 2025؟</h2>
+          <div class="meta">سحابة • بيانات</div>
+          <img
+            src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31"
+            alt="cloud storage"
+          />
+          <p>
+            التخزين السحابي يحمي بياناتك ويوفر وصولًا مرنًا من أي مكان، مما
+            يجعله خيارًا مثاليًا للأفراد والشركات الصغيرة.
+          </p>
+          <div class="tags">
+            <span class="tag">سحابة</span><span class="tag">تخزين</span>
+          </div>
+        </article>
+
+        <article class="article" id="a11" data-title="مهارات العمل 2025">
+          <h2>11. أهم مهارات العمل المطلوبة في سوق التكنولوجيا خلال 2025</h2>
+          <div class="meta">تطوير مهني • وظائف</div>
+          <img
+            src="https://images.pexels.com/photos/3861964/pexels-photo-3861964.jpeg"
+            alt="skills"
+          />
+          <p>
+            تركيز على الذكاء الاصطناعي، تحليل البيانات، الأمن السيبراني،
+            والسحابة.
+          </p>
+          <div class="tags">
+            <span class="tag">مهارات</span><span class="tag">تكنولوجيا</span>
+          </div>
+        </article>
+
+        <article class="article" id="a12" data-title="إضافات الخصوصية">
+          <h2>12. أفضل إضافات المتصفحات لحماية الخصوصية</h2>
+          <div class="meta">خصوصية • متصفح</div>
+          <img
+            src="https://images.unsplash.com/photo-1591696331111-d2a6d8f6f7f3?auto=format&fit=crop&w=1200&q=80"
+            alt="privacy addons"
+          />
+          <p>
+            إضافات مثل uBlock Origin وPrivacy Badger تحجب التتبع وتحسّن سرعة
+            التصفح.
+          </p>
+          <div class="tags">
+            <span class="tag">خصوصية</span><span class="tag">متصفح</span>
+          </div>
+        </article>
+
+        <article class="article" id="a13" data-title="اختيار لابتوب">
+          <h2>13. كيف تختار لابتوب مناسب للدراسة أو العمل؟</h2>
+          <div class="meta">مشورة • شراء</div>
+          <img
+            src="https://images.pexels.com/photos/18105/pexels-photo.jpg"
+            alt="laptop choice"
+          />
+          <p>
+            حدد ميزانيتك واحتياجاتك (برمجة، تصميم، تصفح) ثم اختر المعالج
+            والذاكرة والشاشة المناسبة.
+          </p>
+          <div class="tags">
+            <span class="tag">شراء</span><span class="tag">لابتوب</span>
+          </div>
+        </article>
+
+        <article class="article" id="a14" data-title="خدع الاختراق">
+          <h2>14. أشهر خدع الاختراق التي يجب الحذر منها في 2025</h2>
+          <div class="meta">أمن • وعي</div>
+          <img
+            src="https://images.pexels.com/photos/5380674/pexels-photo-5380674.jpeg"
+            alt="hacking tricks"
+          />
+          <p>
+            الهندسة الاجتماعية والرسائل المزيفة من أكثر الأساليب انتشارًا؛ توخى
+            الحذر دائماً.
+          </p>
+          <div class="tags">
+            <span class="tag">هندسة اجتماعية</span><span class="tag">تحقق</span>
+          </div>
+        </article>
+
+        <article
+          class="article"
+          id="a15"
+          data-title="مكافحة الفيروسات المجانية"
+        >
+          <h2>15. أقوى برامج مكافحة الفيروسات المجانية</h2>
+          <div class="meta">برامج • حماية</div>
+          <img
+            src="https://images.unsplash.com/photo-1581091870627-3a5c3c51c731"
+            alt="antivirus"
+          />
+          <p>
+            يوجد عدد من الخيارات المجانية التي توفر طبقات حماية جيدة للمستخدمين.
+          </p>
+          <div class="tags"><span class="tag">مكافحة الفيروسات</span></div>
+        </article>
+
+        <article class="article" id="a16" data-title="حماية الحاسوب">
+          <h2>16. أفضل نصائح للمحافظة على حاسوبك لسنوات طويلة</h2>
+          <div class="meta">صيانة • نصائح</div>
+          <img
+            src="https://images.pexels.com/photos/4792721/pexels-photo-4792721.jpeg"
+            alt="maintenance"
+          />
+          <p>
+            التنظيف الدوري، تحديث النظام، وفحص القرص من أهم خطوات الحفاظ على عمر
+            الجهاز.
+          </p>
+          <div class="tags">
+            <span class="tag">صيانة</span><span class="tag">نصائح</span>
+          </div>
+        </article>
+
+        <article class="article" id="a17" data-title="الذكاء الاصطناعي">
+          <h2>17. ما هو الذكاء الاصطناعي وكيف سيؤثر على حياتنا؟</h2>
+          <div class="meta">AI • مستقبل</div>
+          <img
+            src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d"
+            alt="ai"
+          />
+          <p>
+            الذكاء الاصطناعي يغير الصناعات من الرعاية الصحية إلى التعليم، ويستمر
+            تطوره بوتيرة سريعة.
+          </p>
+          <div class="tags">
+            <span class="tag">AI</span><span class="tag">تكنولوجيا</span>
+          </div>
+        </article>
+
+        <article class="article" id="a18" data-title="برامج تعديل الصور">
+          <h2>18. أفضل برامج تعديل الصور المجانية</h2>
+          <div class="meta">تصميم • برامج</div>
+          <img
+            src="https://images.pexels.com/photos/459198/pexels-photo-459198.jpeg"
+            alt="photo editors"
+          />
+          <p>
+            برامج مثل Photopea وGIMP وCanva تغطي احتياجات المبتدئين والمحترفين
+            بدون تكلفة.
+          </p>
+          <div class="tags">
+            <span class="tag">تصميم</span><span class="tag">Photopea</span>
+          </div>
+        </article>
+
+        <article class="article" id="a19" data-title="إضافات ووردبريس">
+          <h2>19. أهم إضافات ووردبريس التي يجب أن يمتلكها موقعك</h2>
+          <div class="meta">ووردبريس • تحسين</div>
+          <img
+            src="https://images.pexels.com/photos/265667/pexels-photo-265667.jpeg"
+            alt="wordpress plugins"
+          />
+          <p>
+            محسنات السرعة، إضافات الحماية، وSEO هي أهم فئات الإضافات لأي موقع
+            ووردبريس.
+          </p>
+          <div class="tags">
+            <span class="tag">ووردبريس</span><span class="tag">إضافات</span>
+          </div>
+        </article>
+
+        <article class="article" id="a20" data-title="مستقبل العملات الرقمية">
+          <h2>20. مستقبل العملات الرقمية في 2025</h2>
+          <div class="meta">عملات رقمية • بلوك تشين</div>
+          <img
+            src="https://images.unsplash.com/photo-1621411451370-56c7eec8ba88"
+            alt="crypto"
+          />
+          <p>
+            تستمر العملات الرقمية في التطور مع زيادة الاهتمام بالتكنولوجيا وتبني
+            المؤسسات لها، لكن يبقى التقنين والتنظيم تحديًا.
+          </p>
+          <div class="tags">
+            <span class="tag">كريبتو</span><span class="tag">بلوكتشين</span>
+          </div>
+        </article>
+      </section>
+
+      <aside>
+        <div class="card toc">
+          <h3>قائمة المحتوى</h3>
+          <ul id="tocList"></ul>
+        </div>
+
+        <div class="card">
+          <h3>مقالات مميزة</h3>
+          <ol>
+            <li><a href="#a1">زيادة سرعة الإنترنت</a></li>
+            <li><a href="#a17">الذكاء الاصطناعي</a></li>
+            <li><a href="#a20">مستقبل العملات الرقمية</a></li>
+          </ol>
+        </div>
+
+        <div class="card">
+          <h3>روابط سريعة</h3>
+          <p>
+            <a
+              class="muted-btn"
+              href="https://www.pexels.com"
+              target="_blank"
+              rel="noopener"
+              >Pexels - صور مجانية</a
+            >
+          </p>
+          <p>
+            <a
+              class="muted-btn"
+              href="https://unsplash.com"
+              target="_blank"
+              rel="noopener"
+              >Unsplash - صور مجانية</a
+            >
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>اتصل بنا</h3>
+          <p id="contact">
+            للحصول على تخصيص أو طلب كتابة مقالات: <br /><strong
+              >email@example.com</strong
+            >
+          </p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div class="wrap">
+        © حقوق النشر <strong>موسوعة المقالات التقنية</strong> 2025 — تم تجهيز
+        المحتوى للنشر
+        <div style="margin-top: 10px; color: #6b7280; font-size: 13px">
+          يمكنك استخدام هذه المقالات على موقعك مع الإشارة البسيطة أو دونها وفقًا
+          لرغبتك.
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      // توليد قائمة المحتوى التلقائية
+      (function generateTOC() {
+        const toc = document.getElementById("tocList");
+        const articles = document.querySelectorAll("article.article");
+        articles.forEach((a) => {
+          const h = a.querySelector("h2");
+          const li = document.createElement("li");
+          const aLink = document.createElement("a");
+          aLink.href = "#" + a.id;
+          aLink.textContent = h.textContent;
+          li.appendChild(aLink);
+          toc.appendChild(li);
+        });
+      })();
+
+      // فلتر البحث البسيط
+      const searchInput = document.getElementById("searchInput");
+      let timeout = null;
+      searchInput.addEventListener("input", () => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => filterArticles(searchInput.value), 250);
+      });
+
+      function filterArticles(q = "") {
+        q = q.trim().toLowerCase();
+        document.querySelectorAll("article.article").forEach((a) => {
+          const title = a.dataset.title || a.querySelector("h2").textContent;
+          const text = (a.textContent || "").toLowerCase();
+          const match =
+            q === "" || title.toLowerCase().includes(q) || text.includes(q);
+          a.style.display = match ? "" : "none";
+        });
+      }
+
+      function insertArticleSchema(id, title, description, image) {
+        const script = document.createElement("script");
+        script.type = "application/ld+json";
+        script.text = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: title,
+          description: description,
+          image: image,
+          author: { "@type": "Person", name: "موسوعة المقالات التقنية" },
+          publisher: {
+            "@type": "Organization",
+            name: "موسوعة المقالات التقنية",
+          },
+        });
+        document.getElementById(id).appendChild(script);
+      }
+      insertArticleSchema(
+        "a1",
+        "أفضل 10 طرق عملية لزيادة سرعة الإنترنت في المنزل لعام 2025",
+        "دليل عملي لتحسين سرعة الإنترنت في المنزل دون تكلفة كبيرة.",
+        "https://images.pexels.com/photos/373543/pexels-photo-373543.jpeg"
+      );
+    </script>
+  </body>
+</html>
